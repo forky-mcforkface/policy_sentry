@@ -35,6 +35,10 @@
   <link href="https://docs.aws.amazon.com/assets/r/vendor4.css?version=2021.12.02" rel="stylesheet"/>
   <link href="https://docs.aws.amazon.com/assets/r/awsdocs-common.css?version=2021.12.02" rel="stylesheet"/>
   <link href="https://docs.aws.amazon.com/assets/r/awsdocs-doc-page.css?version=2021.12.02" rel="stylesheet"/>
+  <script data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'iam'}" id="awsc-panorama-bundle" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" type="text/javascript">
+  </script>
+  <meta id="panorama-serviceSubSection" value="Service Authorization Reference"/>
+  <meta id="panorama-serviceConsolePage" value="Actions, resources, and condition keys for Amazon Connect"/>
  </head>
  <body class="awsdocs awsui" ng-csp="no-unsafe-eval">
   <div class="awsdocs-container">
@@ -1208,6 +1212,15 @@
                 </p>
                 <p>
                  events:PutTargets
+                </p>
+                <p>
+                 iam:AttachRolePolicy
+                </p>
+                <p>
+                 iam:CreateServiceLinkedRole
+                </p>
+                <p>
+                 iam:PutRolePolicy
                 </p>
                 <p>
                  mobiletargeting:GetApp
@@ -5320,6 +5333,53 @@
               </tr>
               <tr>
                <td rowspan="2">
+                <a id="amazonconnect-SearchSecurityProfiles">
+                </a>
+                <a href="https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchSecurityProfiles.html">
+                 SearchSecurityProfiles
+                </a>
+               </td>
+               <td rowspan="2">
+                Grants permission to search security profile resources in an Amazon Connect instance
+               </td>
+               <td rowspan="2">
+                Read
+               </td>
+               <td>
+                <p>
+                 <a href="#amazonconnect-instance">
+                  instance*
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+                <p>
+                 connect:DescribeSecurityProfile
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                <p>
+                 <a href="#amazonconnect-connect_InstanceId">
+                  connect:InstanceId
+                 </a>
+                </p>
+                <p>
+                 <a href="#amazonconnect-connect_SearchTag___TagKey_">
+                  connect:SearchTag/${TagKey}
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td rowspan="2">
                 <a id="amazonconnect-SearchUsers">
                 </a>
                 <a href="https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchUsers.html">
@@ -5665,17 +5725,17 @@
                </td>
               </tr>
               <tr>
-               <td rowspan="15">
+               <td rowspan="18">
                 <a id="amazonconnect-TagResource">
                 </a>
                 <a href="https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResource.html">
                  TagResource
                 </a>
                </td>
-               <td rowspan="15">
+               <td rowspan="18">
                 Grants permission to tag an Amazon Connect resource
                </td>
-               <td rowspan="15">
+               <td rowspan="18">
                 Tagging
                </td>
                <td>
@@ -5734,6 +5794,19 @@
                 <p>
                  <a href="#amazonconnect-hours-of-operation">
                   hours-of-operation
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <p>
+                 <a href="#amazonconnect-instance">
+                  instance
                  </a>
                 </p>
                </td>
@@ -5823,6 +5896,19 @@
               <tr>
                <td>
                 <p>
+                 <a href="#amazonconnect-task-template">
+                  task-template
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <p>
                  <a href="#amazonconnect-use-case">
                   use-case
                  </a>
@@ -5838,6 +5924,19 @@
                 <p>
                  <a href="#amazonconnect-user">
                   user
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <p>
+                 <a href="#amazonconnect-vocabulary">
+                  vocabulary
                  </a>
                 </p>
                </td>
@@ -5943,17 +6042,17 @@
                </td>
               </tr>
               <tr>
-               <td rowspan="15">
+               <td rowspan="18">
                 <a id="amazonconnect-UntagResource">
                 </a>
                 <a href="https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagResource.html">
                  UntagResource
                 </a>
                </td>
-               <td rowspan="15">
+               <td rowspan="18">
                 Grants permission to untag an Amazon Connect resource
                </td>
-               <td rowspan="15">
+               <td rowspan="18">
                 Tagging
                </td>
                <td>
@@ -6012,6 +6111,19 @@
                 <p>
                  <a href="#amazonconnect-hours-of-operation">
                   hours-of-operation
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <p>
+                 <a href="#amazonconnect-instance">
+                  instance
                  </a>
                 </p>
                </td>
@@ -6101,6 +6213,19 @@
               <tr>
                <td>
                 <p>
+                 <a href="#amazonconnect-task-template">
+                  task-template
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <p>
                  <a href="#amazonconnect-use-case">
                   use-case
                  </a>
@@ -6116,6 +6241,19 @@
                 <p>
                  <a href="#amazonconnect-user">
                   user
+                 </a>
+                </p>
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <p>
+                 <a href="#amazonconnect-vocabulary">
+                  vocabulary
                  </a>
                 </p>
                </td>
@@ -8941,8 +9079,8 @@
             <div accesskey="p" class="prev-link" href="./list_awsconfig.html" id="previous">
              AWS Config
             </div>
-            <div accesskey="n" class="next-link" href="./list_amazonconnectcustomerprofiles.html" id="next">
-             Amazon Connect Customer Profiles
+            <div accesskey="n" class="next-link" href="./list_amazonconnectcases.html" id="next">
+             Amazon Connect Cases
             </div>
            </div>
           </div>
